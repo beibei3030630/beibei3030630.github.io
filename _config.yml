@@ -372,7 +372,8 @@ gitter:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 ##
+
 deploy:
   type: git
-  repo: https://github.com/<yourAccount>/<repo> # or https://gitee.com/<yourAccount>/<repo>
-  branch: <your-branch>
+  repo: https://github.com/beibei3030630/beibei3030630.github.io # or https://gitee.com/<yourAccount>/<repo>
+  branch: release
