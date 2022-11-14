@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-xxxxxx-xx');
+    </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+    <script type="text/javascript">
+      // Originial
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  <!-- Baidu Push -->
+  
+    <script>
+      (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();
+    </script>
+  
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc"/>
+  <meta name="baidu-site-verification" content="PpzM9WxOJU"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="It&#39;s an IT blog..."/>
+  <meta name="keyword" content="IT  blog,Blog"/>
+  <link rel="shortcut icon" href="/img/avatar/favicon.png"/>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+
+  
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css"/>
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="/css/widget.css"/>
+    <link rel="stylesheet" href="/css/rocket.css"/>
+    <link rel="stylesheet" href="/css/signature.css"/>
+    <link rel="stylesheet" href="/css/catalog.css"/>
+    <link rel="stylesheet" href="/css/livemylife.css"/>
+
+    
+      <!-- wave start -->
+      <link rel="stylesheet" href="/css/wave.css"/>
+      <!-- wave end -->
+    
+
+    
+      <!-- top start (article top hot config) -->
+      <link rel="stylesheet" href="/css/top.css"/>
+      <!-- top end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/scroll.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+      <!-- viewer start (Picture preview) -->
+      <link rel="stylesheet" href="/css/viewer.min.css"/>
+      <!-- viewer end -->
+    
+
+    
+      <!-- Search start -->
+      <link rel="stylesheet" href="/css/search.css"/>
+      <!-- Search end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/themecolor.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+
+    
+      <!-- gitalk start -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+      <link rel="stylesheet" href="/css/gitalk.css"/>
+      <!-- gitalk end -->
+    
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/cn/对象模式设计-各种对象模式详解与差异/">
+  <title>
+    
+      对象模式设计-各种对象模式详解与差异 - 不积小流 无以成江海
+    
+  </title>
+<style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        text-align: center;
+        /* loaderҳ����ʧ���ý����ķ�ʽ*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
+
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+   .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+         .loading-text{
+            font-size: 1.5rem;
+         }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo���ֶ��� */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+ </style>
+ <script>
+(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//ʹ�ý����ķ�������loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },1000); 
+        },1000);//ǿ����ʾloading page 1s  
+    };
+    loaded();
+})()
+ </script><meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+	<body ontouchstart="" class="body--light body--light">
+
+
+		<!-- ThemeColor -->
+		
+		<!-- ThemeColor -->
+<style type="text/css">
+  .body--light {
+    --light-mode: none;
+    --dark-mode: block;
+  }
+  .body--dark {
+    --light-mode: block;
+    --dark-mode: none;
+  }
+  i.mdui-icon.material-icons.light-mode {
+    display: var(--light-mode);
+  }
+  i.mdui-icon.material-icons.dark-mode {
+    display: var(--dark-mode);
+  }
+</style>
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons light-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+<script>
+  //getCookieValue
+  function getCookieValue(a) {
+    var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b
+      ? b.pop()
+      : '';
+  }
+  let themeMode = 'light';
+  if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
+    let dbody = document.body.classList;
+    themeMode === 'dark' ? dbody.remove('body--dark') : dbody.add('body--dark');
+  }
+
+  //setCookieValue
+  var toggleBtn = document.querySelector(".toggle");
+  toggleBtn.addEventListener("click", function () {
+    var e = document.body.classList.contains("body--dark");
+    var cookieString = e
+      ? "dark"
+      : "light";
+    var exp = new Date();
+    exp.setTime(exp.getTime() + 3 * 24 * 60 * 60 * 1000); //3天过期
+    document.cookie = "sb-color-mode=" + cookieString + ";expires=" + exp.toGMTString() + ";path=/";
+  });
+</script>
+
+		
+
+		<!-- Gitter -->
+		
+		<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+		
+
+		<!-- Navigation (contains search)-->
+		<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Beibei&#39;s Blog</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux: <nav>'s height woule be hold on by its content. so, when navbar scale out, the <nav> will cover tags. also mask any touch event of tags, unfortunately. -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">首页</a>
+          </li>
+
+          
+          
+          
+          
+          <li>
+            <a href="/about/">
+              
+              关于
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archive/">
+              
+              归档
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              分类
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              标签
+              
+              
+            </a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a class="popup-trigger">
+              <span class="search-icon"></span>搜索</a>
+          </li>
+          
+
+          <!-- LangSelect -->
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+<script>
+  // Drop Bootstarp low-performance Navbar Use customize navbar with high-quality material design animation in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+		<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    .body--light {
+      /* intro-header */
+      --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
+    }
+    .body--dark {
+      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
+    }
+
+    header.intro-header {
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/lml_bg.jpg'); */
+      
+    }
+
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#js对象" title="js对象">js对象</a>
+              
+            </div>
+            <h1>对象模式设计-各种对象模式详解与差异</h1>
+            <h2 class="subheading">javascript权威指南第六章对象篇</h2>
+            <span class="meta">
+              Posted by beibei3030630 on
+              2020-10-25
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">14</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">3.4k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+		<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h1 id="各种对象模式详解与差异"><a href="#各种对象模式详解与差异" class="headerlink" title="各种对象模式详解与差异"></a>各种对象模式详解与差异</h1><p>  <strong>设计对象模式的意义</strong><br>  所需要的实例对象通过构造函数获得私有属性、通过原型链获得共享的属性。</p>
+<p>  <em>什么是好的方式？</em><br>  私有属性通过构造函数的方式获得（不考虑实例中自定义私有属性）且不需要重写，共<br>  享属性通过原型链找到且不需要重复创建。</p>
+<blockquote>
+<p>资料：  <a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000004559437">创建对象、对象继承的实用方式及理解</a></p>
+</blockquote>
+<h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 在函数内创建一个对象，能够根据接收的参数来构建一个包含所有必要信息的Person对象</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">createPerson</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">let</span> Person = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">        Person.name = name;</span><br><span class="line">        Person.age = age;</span><br><span class="line">         <span class="keyword">return</span> Person;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">let</span> person1 = createPerson(<span class="string">&quot;Lily&quot;</span>, <span class="number">29</span>);</span><br><span class="line">      <span class="keyword">let</span> person2 = createPerson(<span class="string">&quot;Ming&quot;</span>, <span class="number">28</span>);</span><br><span class="line">      <span class="built_in">console</span>.log(person1.name + person1.age);</span><br><span class="line">      <span class="built_in">console</span>.log(person2.name + person2.age);</span><br></pre></td></tr></table></figure>
+<p>工厂模式解决了创建多个相似对象的问题。<br>缺点：没有解决对象识别的问题（无法知道对象的类型）<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(person1 <span class="keyword">instanceof</span> <span class="built_in">Object</span>); <span class="comment">//true</span></span><br><span class="line">    <span class="built_in">console</span>.log(person1 <span class="keyword">instanceof</span> createPerson); <span class="comment">//false</span></span><br></pre></td></tr></table></figure><br><br/></p>
+<h4 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h4><p>优点:可以将构造函数的实例表示为一种特定类型<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">        <span class="built_in">this</span>.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">          <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">        &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;Lily&quot;</span>, <span class="number">29</span>);</span><br><span class="line">      person1.sayName();</span><br></pre></td></tr></table></figure><br>优点:可以将构造函数的实例表示为一种特定类型<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">   <span class="built_in">console</span>.log(person1 <span class="keyword">instanceof</span> <span class="built_in">Object</span>); <span class="comment">//true</span></span><br><span class="line">   <span class="built_in">console</span>.log(person1 <span class="keyword">instanceof</span> Person); <span class="comment">//true</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>构造函数的用法：<br>构造函数与其他函数的区别<strong>只是调用的方式不同</strong>。<br>   1.当做构造函数使用<br>   *<strong>所有函数，只要调用的时候通过new操作符来调用，就可以作为构造函数。否则就是普通函数。</strong><br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;Lily&quot;</span>, <span class="number">29</span>);</span><br><span class="line">    person1.sayName();</span><br></pre></td></tr></table></figure></p>
+<p>   2.当做普通函数调用<br>   *<strong>当在全局作用域中调用一个函数，this对象指向window。window对象下就会拥有调用的那个函数的所有属性与方法。</strong>所以在这里window对象就会有sayName方法<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">    Person(<span class="string">&quot;lulu&quot;</span>, <span class="number">30</span>);  </span><br><span class="line">    <span class="built_in">window</span>.sayName(); <span class="comment">//&quot;lulu&quot;   </span></span><br></pre></td></tr></table></figure></p>
+<p>   3.在另一个对象的作用域中调用<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">     <span class="keyword">let</span> o = <span class="keyword">new</span> <span class="built_in">Object</span>();  </span><br><span class="line">     Person.call(o, <span class="string">&quot;bobo&quot;</span>, <span class="number">30</span>);   </span><br><span class="line">     o.sayName();   </span><br><span class="line"></span><br></pre></td></tr></table></figure><br>new一个构造函数，如果构造函数没有返回值，会隐式的把this作为返回值<br><br/></p>
+<h5 id="new一个构造函数的本质"><a href="#new一个构造函数的本质" class="headerlink" title="new一个构造函数的本质"></a><strong>new一个构造函数的本质</strong></h5><p><strong>如果构造函数没有返回值，会先创建一个指向构造函数原型对象的空对象，this会作为一个默认的返回值，在js底层进行隐式转换的时候，空对象会作为执行环境,this将会作为传参</strong></p>
+<pre><code>**let person=new Person()        ==        new Person().apply(person,this)**
+*有点类似于上面这种，个人理解不一定对*
+</code></pre><p><strong>从而生成一个拥有构造函数属性同时__proto__又指向了构造函数.prototype的新对象</strong><br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">          <span class="built_in">this</span>.name = name;</span><br><span class="line">          <span class="built_in">this</span>.age = age;</span><br><span class="line">          <span class="built_in">this</span>.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">          &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//第一步 先创建了一个指向Person.prototype的空对象</span></span><br><span class="line">        <span class="comment">//第二步 构造函数没有Person，所以默认返回值为this</span></span><br><span class="line">        <span class="comment">//第三部 js底层通过call或者是apply改变this的运行环境作用域（为新对象person）</span></span><br><span class="line">       <span class="comment">//从而生成一个拥有构造函数属性又同时指向构造函数原型对象的新对象</span></span><br><span class="line">        <span class="keyword">let</span> person = <span class="keyword">new</span> Person(<span class="string">&quot;Lily&quot;</span>, <span class="number">29</span>);</span><br></pre></td></tr></table></figure></p>
+<p><strong>如果构造函数有返回值，返回的是对象（不包括null）和函数，则返回值为对象，否则返回的还是默认的this对象</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.a = <span class="number">37</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">let</span> o = <span class="keyword">new</span> F();</span><br><span class="line">      <span class="built_in">console</span>.log(o.a); <span class="comment">//37</span></span><br><span class="line"><span class="comment">//********************************************</span></span><br><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.a = <span class="number">37</span>;</span><br><span class="line">     <span class="comment">//返回对象，则构造函数F的返回值为这个对象</span></span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">          a: <span class="number">38</span>,</span><br><span class="line">        &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">let</span> o = <span class="keyword">new</span> F();</span><br><span class="line">      <span class="built_in">console</span>.log(o.a); <span class="comment">//38</span></span><br><span class="line"><span class="comment">//************************************************</span></span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.b = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.a;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">//foo通过bind传入对象后,在执行对象下变量a有了值</span></span><br><span class="line">      <span class="keyword">let</span> func = foo.bind(&#123; <span class="attr">a</span>: <span class="number">100</span> &#125;);</span><br><span class="line">      <span class="built_in">console</span>.log(func()); <span class="comment">//100</span></span><br><span class="line">      <span class="comment">//构造函数foo有return值，所以return值是返回值 this.a等于undefined</span></span><br><span class="line">      <span class="comment">//return undefined 等于foo还是返回了this作为返回值</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">new</span> foo()); <span class="comment">//foo &#123;b:100&#125;</span></span><br><span class="line"><span class="comment">//************************************************</span></span><br><span class="line"><span class="comment">//其他例子：</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.user = <span class="string">&quot;追梦子&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> &#123;&#125;;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">var</span> a = <span class="keyword">new</span> fn();</span><br><span class="line">      <span class="built_in">console</span>.log(a.user); <span class="comment">//undefined</span></span><br><span class="line"><span class="comment">//*********************************************</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.user = <span class="string">&quot;追梦子&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">var</span> a = <span class="keyword">new</span> fn();</span><br><span class="line">      <span class="built_in">console</span>.log(a.user); <span class="comment">//追梦子</span></span><br><span class="line"><span class="comment">//*********************************************</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.user = <span class="string">&quot;追梦子&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">var</span> a = <span class="keyword">new</span> fn();</span><br><span class="line">      <span class="built_in">console</span>.log(a.user); <span class="comment">//undefined</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//*********************************************</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.user = <span class="string">&quot;追梦子&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">undefined</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">var</span> a = <span class="keyword">new</span> fn();</span><br><span class="line">      <span class="built_in">console</span>.log(a.user); <span class="comment">//追梦子</span></span><br><span class="line"><span class="comment">//*********************************************</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.user = <span class="string">&quot;追梦子&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">var</span> a = <span class="keyword">new</span> fn();</span><br><span class="line">      <span class="built_in">console</span>.log(a.user); <span class="comment">//追梦子</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>构造函数缺点</strong>：<br>在构造函数中创建的每个方法都要在每个实例上重新创建一遍。不同实例上的同名函数是不相等的。<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">          <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">        &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;BIBI&quot;</span>);</span><br><span class="line">      person1.sayName();</span><br><span class="line">      <span class="keyword">let</span> person2 = <span class="keyword">new</span> Person(<span class="string">&quot;CICI&quot;</span>);</span><br><span class="line">      person2.sayName();</span><br><span class="line">      person1.sayName== person2.sayName   <span class="comment">//false</span></span><br><span class="line">    </span><br><span class="line">************************************</span><br><span class="line">      <span class="built_in">this</span>.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">          <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">        &#125;;</span><br><span class="line">  <span class="comment">//等价于</span></span><br><span class="line">  <span class="built_in">this</span>.sayName = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="built_in">console</span>.log(<span class="built_in">this</span>.name));</span><br><span class="line"></span><br></pre></td></tr></table></figure><br> 解决多次创造函数实例的办法：把函数定义转移到构造函数外部。<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.sayName = sayName;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">sayName</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;BIBI&quot;</span>);</span><br><span class="line">      <span class="keyword">let</span> person2 = <span class="keyword">new</span> Person(<span class="string">&quot;CICI&quot;</span>);</span><br><span class="line">      <span class="built_in">console</span>.log(person1.sayName == person2.sayName) <span class="comment">//true</span></span><br></pre></td></tr></table></figure><br>  但是一样有对象如果有多个方法就需要定义多个全局函数的弊端，没有封装性可言。<br><br/></p>
+<h4 id="构造函数与工厂模式的区别"><a href="#构造函数与工厂模式的区别" class="headerlink" title="构造函数与工厂模式的区别"></a><strong>构造函数与工厂模式的区别</strong></h4><p>构造函数：<br>1.没有显示的创建对象</p>
+<p>2.直接将属性和方法赋给了this对象</p>
+<p>3.没有return语句</p>
+<p>4.实例可以标识为一种特定的类型</p>
+<p>例如 let person1=new Person(); person1 instanceof Person //true<br><br/></p>
+<h4 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a><strong>原型模式</strong></h4><p>每个函数都有一个prototype属性，（<strong>Function与Object都是js自带函数，所有他们都有prototype</strong>）prototype属性是一个指针，指向了函数的原型对象。<strong>实例对象没有原型对象,Object是因为是js自带的函数所以才有原型对象。</strong></p>
+<p>可以对原型对象设定属性和方法，可以让对象实例进行共享。</p>
+<p>优势：对比构造函数来说不必在构造函数中定义对象的实例信息。既不会每次实例化对象都创建一个实例函数也不会为了避免创建多个实例函数而放在全局，从而失去了封装性。</p>
+<p>原型模式执行过程：<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">      &#125;</span><br><span class="line">      Person.prototype.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">      &#125;;</span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;bibi&quot;</span>);</span><br><span class="line">      person1.sayName();</span><br><span class="line">    <span class="comment">//解析器会解析两次,先搜索实例person1有没有sayName方法，</span></span><br><span class="line">    <span class="comment">//没有的话就会去搜索原型对象上是不是有sayName方法。从而读取到原型对象上的方法</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h6 id="1-理解原型对象"><a href="#1-理解原型对象" class="headerlink" title="1.理解原型对象"></a><strong>1.理解原型对象</strong></h6><ul>
+<li><p>每个函数拥有一个原型对象,函数通过prototype找到原型对象。</p>
+</li>
+<li><p>函数的实例对象通过隐式属性__proto__找到这个原型对象。</p>
+</li>
+<li><p>原型对象有一个默认属性constructor，指向函数</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person();</span><br><span class="line">      <span class="comment">//实例对象的__proto__指向原型对象</span></span><br><span class="line">      <span class="built_in">console</span>.log(person1.__proto__ == Person.prototype);<span class="comment">//true</span></span><br><span class="line">      <span class="comment">//原型对象的默认属性constructor指向函数</span></span><br><span class="line">      <span class="built_in">console</span>.log((Person.prototype.constructor == Person));<span class="comment">//true</span></span><br><span class="line">      <span class="comment">//原型对象通过__proto__指向Object的原型对象</span></span><br><span class="line">      <span class="built_in">console</span>.log(Person.prototype.__proto__ == <span class="built_in">Object</span>.prototype);<span class="comment">//true</span></span><br><span class="line">      <span class="comment">//但是函数不能指向Function的原型对象，因为Person的原型对象和Function的</span></span><br><span class="line">      <span class="comment">//原型对象平行，同时指向Object的原型对象</span></span><br><span class="line">      <span class="built_in">console</span>.log(Person.prototype.__proto__ == <span class="built_in">Function</span>.prototype);<span class="comment">//false</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="built_in">Function</span>.prototype.__proto__ == <span class="built_in">Object</span>.prototype);<span class="comment">//true</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h6 id="2-原型模式的搜寻方式"><a href="#2-原型模式的搜寻方式" class="headerlink" title="2.原型模式的搜寻方式"></a><strong>2.原型模式的搜寻方式</strong></h6><ul>
+<li>解析器在寻找属性和方法的时候会优先寻找实例上的属性和方法，如果能找到则不会再去搜寻原型对象。<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">      Person.prototype.name = <span class="string">&quot;bibi&quot;</span>;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person();</span><br><span class="line">      person1.name = <span class="string">&quot;Lily&quot;</span>;</span><br><span class="line">      <span class="built_in">console</span>.log(person1.name);<span class="comment">//实例person1上拥有属性name，则不再寻找原型对象</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> person2 = <span class="keyword">new</span> Person();</span><br><span class="line">      <span class="built_in">console</span>.log(person2.name);<span class="comment">//实例上无属性name，继续搜索原型对象</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h6 id="3-判断一个属性存在于实例上还是存在于原型对象上"><a href="#3-判断一个属性存在于实例上还是存在于原型对象上" class="headerlink" title="3.判断一个属性存在于实例上还是存在于原型对象上"></a><strong>3.判断一个属性存在于实例上还是存在于原型对象上</strong></h6><p>“属性” in Object ：用来判断 这个属性是否存在于对象上，无论是实例还是原型对象都为true</p>
+<p>Object hasOwnProperty(“属性”):用来判断属性是否在实例上，在实例上则为true</p>
+<p>结合两者:<br>!object.hasOwnProperty(name) &amp;&amp; name in object：判断是否在原型上<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">      &#125;</span><br><span class="line">      Person.prototype.age = <span class="string">&quot;27&quot;</span>;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;bibi&quot;</span>);</span><br><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">hasPrototypeProperty</span>(<span class="params">object, name</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> !object.hasOwnProperty(name) &amp;&amp; name <span class="keyword">in</span> object;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="built_in">console</span>.log(hasPrototypeProperty(person1, <span class="string">&quot;age&quot;</span>)); <span class="comment">//true</span></span><br><span class="line">      <span class="built_in">console</span>.log(hasPrototypeProperty(person1, <span class="string">&quot;name&quot;</span>)); <span class="comment">//false</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h6 id="4-获取原型对象上属性的方法"><a href="#4-获取原型对象上属性的方法" class="headerlink" title="4.获取原型对象上属性的方法"></a><strong>4.获取原型对象上属性的方法</strong></h6><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, sex</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.sex = sex;</span><br><span class="line">      &#125;</span><br><span class="line">      Person.prototype.age = <span class="string">&quot;27&quot;</span>;</span><br><span class="line">      Person.prototype.address = <span class="string">&quot;xx路xx街&quot;</span>;</span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;bibi&quot;</span>, <span class="string">&quot;female&quot;</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">//传入原型拿到所有原型上可枚举的属性</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(Person.prototype));<span class="comment">//[&#x27;age&#x27;, &#x27;address&#x27;]</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">//getOwnPropertyNames可以拿到所有不可枚举加可枚举的属性</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="built_in">Object</span>.getOwnPropertyNames(Person.prototype));</span><br><span class="line">      <span class="comment">//[&#x27;constructor&#x27;, &#x27;age&#x27;, &#x27;address&#x27;]</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">//传入实例拿到所有实例上可枚举的属性</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(person1));<span class="comment">//[&#x27;name&#x27;, &#x27;sex&#x27;]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h6 id="5-使用字面量方法定义原型对象"><a href="#5-使用字面量方法定义原型对象" class="headerlink" title="5.使用字面量方法定义原型对象"></a><strong>5.使用字面量方法定义原型对象</strong></h6><pre><code>使用字面量相当于创建了一个新的原型对象，会与原有的原型对象共存，但是要注意创建实例的位置与原型对象的关系。
+</code></pre><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person();</span><br><span class="line">      <span class="comment">//现在有两个原型对象 原先的原型对象，只要一个默认属性constructor</span></span><br><span class="line">      <span class="built_in">console</span>.log(Person.prototype); <span class="comment">//constructor</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">//使用字面量相当于新建了一个原型对象</span></span><br><span class="line">      Person.prototype = &#123;</span><br><span class="line">        <span class="comment">//指定了新原型对象的构造函数指向，不指定就不会再指向构造函数Person了</span></span><br><span class="line">        <span class="title">constructor</span>: <span class="title">Person</span>,</span><br><span class="line">        <span class="title">name</span>: &quot;<span class="title">cici</span>&quot;,</span><br><span class="line">        <span class="title">sayName</span>(<span class="params"></span>) &#123;</span><br><span class="line">          <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;;</span><br><span class="line">      <span class="keyword">let</span> person2 = <span class="keyword">new</span> Person();</span><br><span class="line"></span><br><span class="line">      <span class="comment">//新创建的原型对象，三个默认属性:constructor、name、sayName</span></span><br><span class="line">      <span class="built_in">console</span>.log(Person.prototype);</span><br><span class="line">      <span class="comment">// 新创建的原型对象指定了constructor指向</span></span><br><span class="line">      <span class="built_in">console</span>.log(Person.prototype.constructor == Person); <span class="comment">//true</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">// person1的实例在新原型对象之前创建，所以person1.__proto__指向了原先的原型对象</span></span><br><span class="line">      person1.sayName(); <span class="comment">//error</span></span><br><span class="line">      <span class="comment">// person2的实例在新原型对象之后创建，所以person2.__proto__指向了新的原型对象</span></span><br><span class="line">      person2.sayName(); <span class="comment">//cici</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h6 id="6-原型模式的缺点"><a href="#6-原型模式的缺点" class="headerlink" title="6.原型模式的缺点"></a><strong>6.原型模式的缺点</strong></h6><p>原型中的属性都是被共享的，所以实例中修改引用类型的值，同时也会修改掉原型对象中引用类型的值。<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">ColorList</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">      ColorList.prototype.arr = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;yellow&quot;</span>];</span><br><span class="line">      <span class="keyword">let</span> searchColor1 = <span class="keyword">new</span> ColorList();</span><br><span class="line">      searchColor1.arr.push(<span class="string">&quot;green&quot;</span>);</span><br><span class="line">      <span class="built_in">console</span>.log(searchColor1.arr);<span class="comment">//[&#x27;red&#x27;, &#x27;yellow&#x27;, &#x27;green&#x27;]</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> searchColor2 = <span class="keyword">new</span> ColorList();</span><br><span class="line">      <span class="built_in">console</span>.log(searchColor2.arr);<span class="comment">//[&#x27;red&#x27;, &#x27;yellow&#x27;, &#x27;green&#x27;]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p> <br/></p>
+<h5 id="组合模式（构造函数模式-原型模式）"><a href="#组合模式（构造函数模式-原型模式）" class="headerlink" title="组合模式（构造函数模式+原型模式）"></a><strong>组合模式（构造函数模式+原型模式）</strong></h5><p> 构造模式用于定义实例属性</p>
+<p> 原型模式用于定义方法和共享属性（不能是引用类型的属性）</p>
+<p> 结果，每个实例都有一份实例属性的副本同时又共享着方法，最大限度的节省内存。另外这种混合模式还支持向构造函数传递参数<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">        <span class="built_in">this</span>.friends = [];</span><br><span class="line">      &#125;</span><br><span class="line">      Person.prototype = &#123;</span><br><span class="line">        <span class="title">constructor</span>: <span class="title">Person</span>,</span><br><span class="line">        <span class="title">sayPersonInfo</span>(<span class="params"></span>) &#123;</span><br><span class="line">          <span class="built_in">console</span>.log(<span class="built_in">this</span>.name + <span class="built_in">this</span>.age + <span class="built_in">this</span>.friends.join(<span class="string">&quot;,     &quot;</span>));</span><br><span class="line">     &#125;,</span><br><span class="line">    &#125;;</span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;Lily&quot;</span>, <span class="number">29</span>);</span><br><span class="line">      person1.friends.push(<span class="string">&quot;Tom&quot;</span>, <span class="string">&quot;Jerry&quot;</span>);</span><br><span class="line">      person1.sayPersonInfo(); <span class="comment">//Lily29Tom,Jerry</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> person2 = <span class="keyword">new</span> Person(<span class="string">&quot;Mike&quot;</span>, <span class="number">28</span>);</span><br><span class="line">      person2.friends.push(<span class="string">&quot;Alice&quot;</span>, <span class="string">&quot;Marry&quot;</span>);</span><br><span class="line">      person2.sayPersonInfo(); <span class="comment">//Mike28Alice,Marry</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p><br/></p>
+<h6 id="动态原型"><a href="#动态原型" class="headerlink" title="动态原型"></a><strong>动态原型</strong></h6><p> 1.把所有信息封装在了构造函数中。</p>
+<p> 2.通过在构造函数中初始化原型，保持了构造函数和原型的优点。</p>
+<p> 换句话说，可以通过检查某个应该存在的方法是否有效，来决定是否需要初始化原型</p>
+<p>注意：这段代码只会在初次调用构造函数中执行<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">this</span>.sayName != <span class="string">&quot;function&quot;</span>) &#123;</span><br><span class="line">          Person.prototype.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="built_in">this</span>.name);</span><br><span class="line">          &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">let</span> person1 = <span class="keyword">new</span> Person(<span class="string">&quot;Lily&quot;</span>, <span class="number">29</span>);</span><br><span class="line">      person1.sayName();</span><br><span class="line"></span><br></pre></td></tr></table></figure><br><br/></p>
+<h5 id="寄生构造函数模式"><a href="#寄生构造函数模式" class="headerlink" title="寄生构造函数模式"></a><strong>寄生构造函数模式</strong></h5><pre><code>寄生模式使用new操作符去实例化对象，其余跟工厂模式一致。
+
+寄生模式也不能识别对象类型，这点也与工厂模式一致。
+</code></pre><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">SpecialArray</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">let</span> values = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">        values.push.apply(values, <span class="built_in">arguments</span>);</span><br><span class="line">        values.toPiepdString = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="built_in">this</span>.join(<span class="string">&quot;|&quot;</span>);</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">return</span> values;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">let</span> colors = SpecialArray(<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>);</span><br><span class="line">      <span class="built_in">console</span>.log(colors.toPiepdString());<span class="comment">//red|blue|green</span></span><br><span class="line">      <span class="built_in">console</span>.log(colors <span class="keyword">instanceof</span> SpecialArray); <span class="comment">//false</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p> 使用寄生构造函数的目的是希望扩展原生Array的一个方法toPipeMessage,为了不污染原生构造函数。相当于作者希望通过new去区分，<strong>用寄生构造去定义扩展原生函数，用工厂模式去定义自定义函数。</strong></p>
+<blockquote>
+<p>资料  <a target="_blank" rel="noopener" href="https://segmentfault.com/q/1010000004596650">js中寄生构造函数模式和工厂模式的区别</a></p>
+</blockquote>
+<p><br/></p>
+<h5 id="稳妥构造函数模式"><a href="#稳妥构造函数模式" class="headerlink" title="稳妥构造函数模式"></a><strong>稳妥构造函数模式</strong></h5><pre><code>遵循类似寄生构造函数的模式。稳妥构造函数模式也不能识别对象类型。
+
+稳妥对象适合在一些安全的环境中（这些环境禁止使用this或者new），或者在防止数据被其他应用程序改动时使用。
+</code></pre><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">let</span> o = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">        o.name = name;</span><br><span class="line">        o.age = age;</span><br><span class="line">        o.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">       <span class="comment">//第一点不同：创建对象的实例方法不引用this</span></span><br><span class="line">          <span class="built_in">console</span>.log(name);</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">return</span> o;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">//第二点不同：不适用new操作符调用构造函数</span></span><br><span class="line">      <span class="keyword">let</span> person1 = Person(<span class="string">&quot;Lily&quot;</span>, <span class="number">29</span>); </span><br><span class="line">      <span class="comment">//person1是个稳妥的对象，除了方法其sayName方法外，</span></span><br><span class="line">      <span class="comment">//没有别的办法可以访问person1里面的其他数据成员</span></span><br><span class="line">      person1.sayName();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/cn/对象模式设计-各种继承详解与差异/" data-toggle="tooltip" data-placement="top" title="对象模式设计-各种继承详解与差异">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/cn/Hexo-Theme-LiveMyLife/" data-toggle="tooltip" data-placement="top" title="Hexo-Theme-LiveMyLife">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=对象模式设计-各种对象模式详解与差异&body=Hi,I found this website and thought you might like it http://yoursite-url/cn/对象模式设计-各种对象模式详解与差异/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Sun Oct 25 2020 18:00:00 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F"><span class="toc-nav-text">工厂模式</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-nav-text">构造函数</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#new%E4%B8%80%E4%B8%AA%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="toc-nav-text">new一个构造函数的本质</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%8E%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-nav-text">构造函数与工厂模式的区别</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F"><span class="toc-nav-text">原型模式</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#1-%E7%90%86%E8%A7%A3%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1"><span class="toc-nav-text">1.理解原型对象</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#2-%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%90%9C%E5%AF%BB%E6%96%B9%E5%BC%8F"><span class="toc-nav-text">2.原型模式的搜寻方式</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#3-%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7%E5%AD%98%E5%9C%A8%E4%BA%8E%E5%AE%9E%E4%BE%8B%E4%B8%8A%E8%BF%98%E6%98%AF%E5%AD%98%E5%9C%A8%E4%BA%8E%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1%E4%B8%8A"><span class="toc-nav-text">3.判断一个属性存在于实例上还是存在于原型对象上</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#4-%E8%8E%B7%E5%8F%96%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1%E4%B8%8A%E5%B1%9E%E6%80%A7%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-nav-text">4.获取原型对象上属性的方法</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#5-%E4%BD%BF%E7%94%A8%E5%AD%97%E9%9D%A2%E9%87%8F%E6%96%B9%E6%B3%95%E5%AE%9A%E4%B9%89%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1"><span class="toc-nav-text">5.使用字面量方法定义原型对象</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#6-%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-nav-text">6.原型模式的缺点</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F%EF%BC%88%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%A8%A1%E5%BC%8F-%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F%EF%BC%89"><span class="toc-nav-text">组合模式（构造函数模式+原型模式）</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#%E5%8A%A8%E6%80%81%E5%8E%9F%E5%9E%8B"><span class="toc-nav-text">动态原型</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#%E5%AF%84%E7%94%9F%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%A8%A1%E5%BC%8F"><span class="toc-nav-text">寄生构造函数模式</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#%E7%A8%B3%E5%A6%A5%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%A8%A1%E5%BC%8F"><span class="toc-nav-text">稳妥构造函数模式</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#js对象" title="js对象">js对象</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+		<!-- Footer (contains ThemeColor、viewer) -->
+		<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/beibei3030630">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          beibei3030630
+          2022
+          <br>
+          <!-- Theme by
+          <a target="_blank" rel="noopener" href="http://beantech.org">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a target="_blank" rel="noopener" href="https://v-vincen.life/">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe> -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="/js/hux-blog.min.js"></script>
+  <!-- catalog -->
+  <script async="true" type="text/javascript" src="/js/catalog.js"></script>
+  <!-- totop(rocket) -->
+  <script async="true" type="text/javascript" src="/js/totop.js"></script>
+
+  
+    <!-- Busuanzi JavaScript -->
+    <script async="async" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <!-- Scroll start -->
+    <script async="async" type="text/javascript" src="/js/scroll.js"></script>
+    <!-- Scroll end -->
+  
+
+  
+    <!-- LangSelect start -->
+    <script type="text/javascript" src="/js/langselect.js"></script>
+    <!-- LangSelect end -->
+  
+
+  
+    <!-- Mouseclick -->
+    <script type="text/javascript" src="/js/mouseclick.js" content='秋风,落叶,清晨,黄昏,四季,如常' color='#32384E,#333242,#27222C,#272731,#2C2E3D,#282531'></script>
+  
+
+  
+    <!-- ribbon -->
+    <script type="text/javascript" src="/js/ribbonDynamic.js"></script>
+  
+
+  
+
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  
+    <script async="async" type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+    <script async="async" type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  
+
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async ("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () { hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if ($('#tag_cloud').length !== 0) { async ("http://yoursite-url/js/jquery.tagcloud.js", function () { $.fn.tagcloud.defaults = { // size: { start: 1, end: 1, unit: 'em' }, color: {
+start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+		<!-- Search -->
+		
+		<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    <script src="/js/ziploader.js"></script>
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+            
+
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+		
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
